@@ -10,55 +10,67 @@ body {
     flex-direction: column;
     justify-content: center;
 }
+
 header {
     margin-bottom: 20px;
 }
+
 header h1 {
     font-size: 2.5em;
     font-weight: bold;
     margin: 0;
 }
+
 .main-content {
     max-width: 800px;
     margin: 0 auto;
 }
+
 .main-content p {
     font-size: 1.5em;
     margin: 10px 0;
 }
+
 .open-source-note {
     font-size: 1.2em;
     margin: 15px 0;
 }
+
 .positive-img {
     max-width: 100%;
     height: auto;
     margin: 20px 0;
     border: 2px solid #000;
 }
+
 .accelerate-text {
     font-size: 2em;
     font-weight: bold;
     animation: bounce 1s infinite;
 }
+
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
     40% { transform: translateY(-20px); }
     60% { transform: translateY(-10px); }
 }
+
 .hope-message {
     font-size: 1.3em;
     color: #444;
     margin: 20px 0;
 }
+
 footer {
     margin-top: 20px;
     font-size: 0.9em;
 }
+
 a {
     color: #000;
     text-decoration: underline;
 }
+
 a:hover {
     text-decoration: none;
 }
@@ -68,13 +80,16 @@ a:hover {
     header h1 {
         font-size: 8vw; /* Larger on very small screens */
     }
+    
     .positive-img {
         max-width: 80%; /* Smaller image on mobile */
     }
+    
     .accelerate-text {
         animation-duration: 1.2s; /* Slightly slower bounce on mobile */
     }
 }
+
 @media (min-width: 1200px) {
     .main-content {
         max-width: 800px; /* Cap width on large screens */
