@@ -62,3 +62,21 @@ a {
 a:hover {
     text-decoration: none;
 }
+
+/* Media Queries for Fine-Tuning */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 8vw; /* Larger on very small screens */
+    }
+    .positive-img {
+        max-width: 80%; /* Smaller image on mobile */
+    }
+    .accelerate-text {
+        animation-duration: 1.2s; /* Slightly slower bounce on mobile */
+    }
+}
+@media (min-width: 1200px) {
+    .main-content {
+        max-width: 800px; /* Cap width on large screens */
+    }
+}
