@@ -12,7 +12,6 @@
     </header>
     <section class="main-content">
         <p>No overthinking. No endless planning. Just action.</p>
-        <p class="open-source-note">I bought this domain lol for fun</p>
         <!-- Positive Image -->
         <img src="https://picsum.photos/600/400?random=1" alt="Random positive image" class="positive-img">
         <p class="accelerate-text">Accelerate your ideas!</p>
@@ -24,5 +23,25 @@
     <footer>
         <p>© 2025 YouCanJustDoThings</p>
     </footer>
+
+    <!-- Background Music -->
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="./asset/interstellar.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const music = document.getElementById('backgroundMusic');
+            music.play().catch(error => {
+                console.error('Autoplay failed:', error);
+                setTimeout(() => {
+                    music.play().catch(err => {
+                        console.error('Retry failed:', err);
+                    });
+                }, 1000);
+            });
+        });
+    </script>
 </body>
 </html>
